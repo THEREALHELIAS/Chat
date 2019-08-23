@@ -13,8 +13,11 @@ export default function PaperSheet() {
     <div>
       <Paper className='root'>
         <div className='title'>
-          <Typography variant="h5" component="h3" className='title-main'>
+          <Typography variant="h4" component="h3" className='title-main'>
             Chat Application
+          </Typography>
+          <Typography variant="h5" component="h2" className='topic-title'>
+            Topic
           </Typography>
         </div>
         <div className='ChatContent'>

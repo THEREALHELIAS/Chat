@@ -13,6 +13,7 @@
 }
 .ChatContent{
     display: flex;
+    align-items: center;
 }
 .viewchat{
     width: 100%;
@@ -51,4 +52,11 @@
 .avatar{
     flex-direction: column;
     display: flex;
+}
+.Input{
+    display: flex;
+    margin: 10px
+}
+.msg-txt{
+    padding-left: 10px;
 }

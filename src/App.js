@@ -3,18 +3,19 @@ import './App.css';
 import Background from './Components/paper'
 import Viewchat from './Components/ChatWindow'
 import './App.css'
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+import Reducer from './Reducers/index'
 
 function App() {
   return (
-    <div className="App">
-      {/* <p className= 'title-1'>
-        Web Chat Application
-      </p> */}
-      <Background>
-        <Viewchat/>
-      </Background>
-
-    </div>
+    <Provider store={createStore(Reducer)}>
+      <div className="App">
+        <Background>
+          <Viewchat/>
+        </Background>
+      </div>
+    </Provider>
   );
 }
 

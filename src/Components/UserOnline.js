@@ -1,15 +1,23 @@
 import React from 'react'
-import Grid from '@material-ui/core/Grid';
-import Avatar from '@material-ui/core/Avatar';
 import './Components.css'
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+
 
 export default function Chatview(){
     return(
         <div className='viewuser'>
-            hoping for online user to see
-            <Grid container justify="left" alignItems="left" className='avatar'>
-                <Avatar/><p>hi</p>
-            </Grid>
+            <List>
+                {
+                    ['user'].map((user, i) => (
+                        <ListItem key={i}>
+                            <ListItemText primary={user}></ListItemText>
+                        </ListItem>
+                    ))
+                }
+            </List>
+            
         </div>
     )
 }
