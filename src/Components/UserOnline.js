@@ -3,9 +3,9 @@ import './Components.css'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import { connect } from 'react-redux'
 
-
-export default function Chatview(){
+function Chatview(){
     return(
         <div className='viewuser'>
             <List>
@@ -21,3 +21,5 @@ export default function Chatview(){
         </div>
     )
 }
+
+export default connect()(Chatview)

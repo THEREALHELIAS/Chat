@@ -1,4 +1,4 @@
-export const Add_Message = 'ADD_MESSAGE'
-export const Message_Receive = 'MESSAGE_RECEIVE'
-export const Add_Room = 'ADD_ROOM'
-export const Room_View = 'ROOM_VIEW'
+export const ADD_MESSAGE = 'ADD_MESSAGE'
+export const MESSAGE_RECEIVE = 'MESSAGE_RECEIVE'
+export const ADD_ROOM = 'ADD_ROOM'
+export const ROOM_VIEW = 'ROOM_VIEW'

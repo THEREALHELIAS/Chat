@@ -3,18 +3,25 @@ import './App.css';
 import Background from './Components/paper'
 import Viewchat from './Components/ChatWindow'
 import './App.css'
-import {createStore} from 'redux'
+import {createStore, applyMiddleware, compose} from 'redux'
 import {Provider} from 'react-redux'
 import Reducer from './Reducers/index'
+import thunk from 'redux-thunk'
 
 function App() {
+  const Store = createStore(Reducer,compose(applyMiddleware(thunk),
+   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  ))
+    
   return (
-    <Provider store={createStore(Reducer)}>
+    <Provider store={Store}>
+      
       <div className="App">
         <Background>
           <Viewchat/>
         </Background>
       </div>
+      
     </Provider>
   );
 }

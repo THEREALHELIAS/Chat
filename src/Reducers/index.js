@@ -3,7 +3,7 @@ import MSG from './Messages'
 import NR from './NewRoom'
 
 const chat = combineReducers ({
-    MSG,
-    NR,
+    Messages: MSG,
+    AddingRoom: NR
 })
 export default chat
