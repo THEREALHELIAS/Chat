@@ -4,6 +4,6 @@ import NR from './NewRoom'
 
 const chat = combineReducers ({
     Messages: MSG,
-    AddingRoom: NR
+    Channels: NR
 })
 export default chat

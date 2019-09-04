@@ -3,7 +3,8 @@ import {
     ROOM_VIEW,
 } from '../Constants/ActionTypes';
  let init_state = {
-    rooms: []
+    rooms: [],
+    active: [0]
 };
 
 export default function NewRoom(state=init_state, action){

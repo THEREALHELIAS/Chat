@@ -34,7 +34,7 @@ class AddRoom extends Component{
             <div className='add-room'>
                 <form onSubmit={this.handleSubmit}>
                     <input value={this.state.rooms} onChange={this.handleChange} />
-                    <button type="submit">Enter Room Name</button>
+                    <button type="submit">Channel Name</button>
                 </form>    
             </div>
         )

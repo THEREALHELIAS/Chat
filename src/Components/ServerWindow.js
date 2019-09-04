@@ -31,7 +31,7 @@ class Roomview extends Component{
     }
 const mapStateToProps = state => {
     return {
-      addRoom: state.AddingRoom.rooms
+      addRoom: state.Channels.rooms
     }
   };
 
